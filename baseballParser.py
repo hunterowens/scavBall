@@ -26,6 +26,13 @@ def runners():
     Turns on the light for the runners
     """
     runners = game['runners_on_base']
+    if runners.runner_on_1b:
+        #light(firstBase Runne)
+    if runners.runner_on_2b:
+        #light runn
+    if runner.runner_on_3b:
+        pass
+
     pass
 
 def atBat():
