@@ -7,7 +7,7 @@ data = r.json()
 games = data['data']['games']['game']
 
 last_game = games.pop()
-def getLineup():
+def _getLineup():
     """
     get the lineup
     """
