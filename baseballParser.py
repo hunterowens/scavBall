@@ -25,11 +25,21 @@ def runners():
     """
     Turns on the light for the runners
     """
+    runners = game['runners_on_base']
     pass
 
 def atBat():
     batter= game['batter']
     print batter
+
+def getOuts():
+    pass
+
+def getStrikes():
+    pass
+
+def getBalls():
+    pass
 
 
 if __name__ == '__main__':
