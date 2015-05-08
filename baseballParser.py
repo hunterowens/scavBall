@@ -7,6 +7,11 @@ data = r.json()
 games = data['data']['games']['game']
 
 last_game = games.pop()
+def getLineup():
+    """
+    get the lineup
+    """
+    pass 
 
 def findGame():
     """
@@ -23,6 +28,9 @@ def runners():
     pass
 
 def atBat():
-    pass
+    batter= game['batter']
+    print batter
 
 
+if __name__ == '__main__':
+    atBat()
