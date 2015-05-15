@@ -1,6 +1,6 @@
 import requests
 
-url = "http://gd2.mlb.com/components/game/mlb/year_2015/month_05/day_07/master_scoreboard.json"
+url = "http://gd2.mlb.com/components/game/mlb/year_2015/month_05/day_08/master_scoreboard.json"
 
 r = requests.get(url)
 data = r.json()
@@ -26,11 +26,13 @@ def runners():
     Turns on the light for the runners
     """
     runners = game['runners_on_base']
-    if runners.runner_on_1b:
+    if 'runner_on_1b' in runners:
+        pass
         #light(firstBase Runne)
-    if runners.runner_on_2b:
+    if 'runner_on_2b' in runners:
+        pass
         #light runn
-    if runner.runner_on_3b:
+    if 'runner_on_3b' in runners:
         pass
 
     pass
